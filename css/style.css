@@ -1,0 +1,1319 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+}
+html,
+body {
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+nav.navbar .navbar-nav li a.nav-link {
+  color: black;
+  font-size: 15px;
+  font-weight: 350;
+  line-height: 60px;
+  padding-left: 24px;
+  padding-right: 24px;
+  transition: all 0.5s ease;
+}
+
+nav.navbar .navbar-brand {
+  color: #555;
+  font-size: 27px;
+}
+
+nav.navbar {
+  background-color: #fff;
+  padding: 0px 20px;
+}
+
+nav.navbar .navbar-nav li a.nav-link:hover,
+nav.navbar .navbar-nav li a.nav-link.active {
+  color: #f45;
+  background-color: #fff;
+}
+
+nav.navbar.noTransparrent {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid #eee;
+}
+
+nav.navbar.noTransparrent ul.navbar-nav li a.nav-link {
+  color: #0575e9;
+}
+
+nav.navbar.noTransparrent ul.navbar-nav li a.nav-link:hover,
+nav.navbar.noTransparrent ul.navbar-nav li a.nav-link.active {
+  color: #f45;
+  background-color: #eee;
+}
+
+header.header {
+  background: url(../images/hero-bg/landing.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  transform: translateY(3%);
+}
+
+header.header .container {
+  padding: 0 0px;
+  max-width: 1550px;
+}
+
+header.header .overlay {
+  background-color: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  padding: 40px 60px;
+}
+
+header.header .overlay .warrper {
+  min-height: 100vh;
+}
+
+header .overlay .warrper .carousel-inner {
+  padding: 0 0px;
+}
+
+header .overlay .warrper .carousel-inner .carousel-item {
+  min-height: 100vh;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  position: relative;
+}
+
+header .overlay .warrper .carousel-inner .carousel-item .carousel-caption {
+  transform: translateY(-300px);
+}
+
+header .overlay .warrper .carousel-inner .carousel-item .carousel-caption h2 {
+  color: #fff;
+  font-size: 50px;
+  line-height: 50px;
+  transition: all 1s ease;
+  font-weight: 250;
+}
+
+header
+  .overlay
+  .warrper
+  .carousel-inner
+  .carousel-item
+  .carousel-caption
+  h2::after {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -20px;
+  left: 45%;
+}
+
+header .overlay .warrper .carousel-inner .carousel-item .carousel-caption p {
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  padding-top: 30px;
+  font-weight: 250;
+}
+
+header .overlay .warrper button {
+  border-radius: 0;
+  width: 120px;
+  color: #fff;
+  background-color: #0575e9;
+  transform: translateY(-300px);
+}
+
+header .overlay .warrper button:hover {
+  color: #f45;
+}
+
+header
+  .overlay
+  .warrper
+  .carousel-inner
+  .carousel-item.active
+  .carousel-caption
+  p,
+header
+  .overlay
+  .warrper
+  .carousel-inner
+  .carousel-item.active
+  .carousel-caption
+  h2 {
+  transform: translateY(0px);
+}
+
+header .overlay .warrper .carousel-inner .carousel-item.active {
+  opacity: 1;
+}
+
+header
+  .overlay
+  .warrper
+  .carousel-inner
+  .carousel-item.active
+  .carousel-caption {
+  opacity: 1;
+}
+
+section.about {
+  padding-top: 110px;
+  padding-bottom: 130px;
+  border-bottom: 1px solid #eee;
+}
+
+section.about .container h5 {
+  font-size: 26px;
+  line-height: 50px;
+  color: #282828;
+  padding-bottom: 10px;
+}
+
+section.about .container .title h3 {
+  font-size: 32px;
+  line-height: 60px;
+  color: #0e0e0e;
+  padding-bottom: 20px;
+  font-weight: 200;
+  position: relative;
+}
+
+section.about .container .title h3::after {
+  content: "";
+  width: 90px;
+  height: 3px;
+  border: 1px solid #0e0e0e;
+  position: absolute;
+  left: 45%;
+  bottom: 0px;
+}
+
+section.about .container .title p {
+  text-align: center;
+  line-height: 25px;
+  font-weight: 380;
+  padding: 0 29%;
+  font-size: 16px;
+  color: #9d9c9c;
+  padding-bottom: 90px;
+  word-spacing: 3px;
+}
+
+section.about .container .row .icon {
+  color: #fc6f52;
+  font-size: 43px;
+  padding-bottom: 20px;
+}
+
+section.about .container .row h4 {
+  font-size: 18px;
+  line-height: 25px;
+  color: #202122;
+  padding-bottom: 5px;
+}
+
+section.about .container .row .col-md-4 p {
+  font-size: 15px;
+  line-height: 25px;
+  color: #797979;
+  font-weight: 400;
+}
+
+section.about .container .row .col-md-4 {
+  padding-right: 20px;
+}
+
+
+section.services {
+  padding-top: 7%;
+  padding-bottom: 85px;
+}
+
+section.services .phara h5 {
+  font-size: 25px;
+  color: #000;
+  line-height: 30px;
+  position: relative;
+}
+section.services .x {
+  display: flex;
+}
+section.services .phara h5::after {
+  content: "";
+  width: 80px;
+  height: 1px;
+  background-color: #fc6f52;
+  position: absolute;
+  bottom: -15px;
+  left: 47%;
+}
+
+section.services .phara p {
+  padding-top: 20px;
+  padding-left: 32%;
+  padding-right: 32%;
+  font-size: 15px;
+  color: #555;
+  font-weight: 350;
+  padding-bottom: 50px;
+}
+
+section.services div.col-md-6 {
+  padding: 0 0px;
+}
+
+section.services img {
+  vertical-align: inherit;
+  width: 80%;
+  transform: translateX(55px);
+}
+
+section.services .sss .features {
+  transform: translateX(35px);
+}
+
+section.services .col-md-3 {
+  margin-top: 40px;
+}
+
+section.services .features {
+  padding-bottom: 15px;
+}
+
+section.services .features .service-icon {
+  margin-right: 25px;
+  color: #fc6f52;
+}
+
+section.services .features .service-text h5 {
+  font-size: 19px;
+  color: #202122;
+  line-height: 25px;
+}
+
+section.services .features .service-text p {
+  color: #9d9c9c;
+  font-size: 15px;
+  word-spacing: 3px;
+  line-height: 23px;
+  font-weight: 380;
+}
+
+section.services .ser-2 {
+  background-image: url(../images/temp/tweet-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  margin-top: 80px;
+}
+
+section.services .ser-2 .overlay .tit {
+  padding-top: 135px;
+}
+
+section.services .ser-2 .overlay {
+  height: 400px;
+  background-color: rgba(247, 104, 75, 0.9);
+}
+
+section.services .ser-2 .overlay .service-icon {
+  display: block;
+  color: #fff;
+  position: relative;
+  left: 47%;
+}
+
+section.services .ser-2 .overlay h4 {
+  font-size: 40px;
+  line-height: 50px;
+  color: #fff;
+}
+
+section.services .ser-2 .overlay p {
+  font-size: 20px;
+  line-height: 32px;
+  color: #fff;
+  word-spacing: 4px;
+  font-weight: 300px;
+}
+
+section.team .team-text h5 {
+  font-size: 25px;
+  color: #000;
+  line-height: 30px;
+  position: relative;
+}
+
+section.team .team-text h5::after {
+  content: "";
+  width: 80px;
+  height: 1px;
+  background-color: #fc6f52;
+  position: absolute;
+  bottom: -15px;
+  left: 47%;
+}
+
+section.team .team-text p {
+  padding-top: 20px;
+  padding-left: 33%;
+  padding-right: 33%;
+  font-size: 15px;
+  color: #555;
+  font-weight: 350;
+  padding-bottom: 50px;
+}
+
+section.team .container {
+  width: 78%;
+  position: relative;
+}
+
+section.team img {
+  width: 99%;
+}
+
+section.team .overlay {
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-450px);
+  min-height: 450px;
+  padding-top: 120px;
+  opacity: 0;
+}
+
+section.team .overlay .img-text h5 {
+  font-size: 23px;
+  line-height: 25px;
+  color: #000;
+}
+
+section.team .overlay .img-text h4 {
+  font-size: 15px;
+  line-height: 18px;
+  color: #555;
+  padding: 20px 0px 15px;
+}
+
+section.team .container .col-md-4 {
+  height: 460px;
+  overflow: hidden;
+}
+
+section.team .overlay .img-text p {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 14px;
+  line-height: 23px;
+  word-spacing: 4px;
+  color: #797979;
+  padding-bottom: 35px;
+}
+
+section.team .overlay .social ul li {
+  color: #eee;
+  padding-left: 15px;
+}
+
+section.team .overlay .social ul li .service-icon {
+  color: #000;
+}
+
+section.team .overlay .social ul li .service-icon:hover {
+  color: #f45;
+}
+
+section.team img:hover .overlay {
+  opacity: 1;
+}
+
+section.team .container .sec-cont {
+  padding-top: 45px;
+}
+.progress-bar-container:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+/* Styling the h2 tag by giving color,
+letter spacing, font-size etc.*/
+.progress-bar-container h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #797979;
+  letter-spacing: 1px;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.progress-bar-container h2 span {
+  padding-left: 420px;
+}
+
+.progress-bar-container h2 span.css {
+  padding-left: 390px;
+}
+
+.progress-bar-container h2 span.java {
+  padding-left: 347px;
+}
+
+.progress-bar-container h2 span.html {
+  padding-left: 380px;
+}
+.progress-bar-container h2 span.jquery {
+  display: inline-block;
+  padding-left: 370px;
+}
+
+/* Styling the border and box
+effect of the progress bar*/
+.progress-bar {
+  width: 450px;
+  height: 6px;
+  background-color: #eee;
+}
+
+/* Stylingthe background color of each
+animation and border radius */
+.percentage {
+  display: block;
+  height: 100%;
+  background-color: #000;
+  border-radius: 5px;
+  animation: progress 1500ms ease-in 1;
+}
+
+/* Assigning width of each languages*/
+
+.jquery {
+  width: 45%;
+}
+
+.html {
+  width: 95%;
+}
+
+.css {
+  width: 85%;
+}
+
+.javascript {
+  width: 75%;
+}
+
+/* Animating the progress bar by
+initially starting from 0*/
+@keyframes progress {
+  from {
+    width: 0;
+  }
+}
+
+section.team .container .sec-cont h4 {
+  padding-bottom: 25px;
+  font-size: 30px;
+  line-height: 40px;
+  color: #555;
+}
+
+section.team .container .sec-cont p {
+  font-size: 15px;
+  line-height: 20px;
+  word-spacing: 3px;
+  color: #797979;
+}
+
+section.team .serv {
+  background-image: url(../images/temp/stats-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  margin-top: 100px;
+}
+
+section.team .overlay2 {
+  background-color: rgba(40, 42, 42, 0.92);
+  padding-left: 11.5%;
+  padding-right: 14.5%;
+  height: 430px;
+  display: flex;
+}
+section.team .overlay {
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-570px);
+  min-height: 590px;
+  padding-top: 280px;
+  opacity: 0;
+  transition: all 1s ease;
+}
+section.team .overlay:hover {
+  opacity: 1;
+}
+section.team .overlay .img-text {
+  opacity: 0;
+}
+section.team .overlay:hover .img-text {
+  opacity: 1;
+}
+
+section.team .serv .banner-img {
+  width: 530px;
+  height: 500px;
+  margin-left: auto;
+}
+
+section.team .serv .text-banner {
+  width: 500px;
+  padding-top: 110px;
+}
+
+section.team .serv .text-banner h4 {
+  color: #fff;
+  font-size: 25px;
+  line-height: 30px;
+  padding-bottom: 15px;
+}
+
+section.team .serv .text-banner p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  font-weight: 200px;
+  word-spacing: 2px;
+}
+
+section.team .serv .text-banner a button {
+  width: 150px;
+  height: 40px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  margin-top: 15px;
+  text-align: center;
+}
+
+section.team .team-3 .container .row {
+  width: 100%;
+  height: auto;
+}
+
+section.team .team-3 ul {
+  list-style: none;
+}
+
+section.team .team-3 {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #eee;
+  clear: left;
+  padding-top: 150px;
+}
+
+section.team .team-3 .text-list {
+  margin-bottom: 50px;
+}
+
+section.team .team-3 .text-list h2 {
+  font-size: 40px;
+  line-height: 60px;
+  color: #000;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+section.team .team-3 .text-list p {
+  font-size: 15px;
+  line-height: 25px;
+  color: #9d9c9c;
+  word-spacing: 3px;
+  padding-right: 40px;
+}
+
+section.team .team-3 ul .ro-list {
+  margin-bottom: 20px;
+}
+
+section.team .team-3 ul .ro-list h2 {
+  color: #000;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+
+section.team .team-3 ul .ro-list p {
+  color: #9d9c9c;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 320;
+  padding-right: 25px;
+  word-spacing: 2px;
+}
+
+section.team .team-3 .image {
+  width: 67%;
+  margin-left: auto;
+  padding-right: 45px;
+  transform: translateY(-55px);
+}
+
+section.team .team-4 {
+  padding-bottom: 100px;
+  border-bottom: 1px solid #eee;
+}
+
+section.team .team-4 .image-2 {
+  padding-top: 100px;
+  width: 60%;
+  margin: auto;
+}
+
+section.team .team-4 .on-text {
+  padding-top: 35%;
+}
+
+section.team .team-4 .on-text h2 {
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 2px;
+  white-space: 3px;
+  color: #000;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+section.team .team-4 .on-text p {
+  color: #797979;
+  font-size: 18px;
+  line-height: 28px;
+  word-spacing: 2px;
+  margin-bottom: 35px;
+  padding-right: 70px;
+  font-weight: 350;
+}
+
+section.team .team-4 .on-text button {
+  padding: 10px 30px;
+  color: #fff;
+  background-color: #fc6f52;
+  font-size: 25px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  border: 1px solid #fc6f52;
+}
+
+section.team .team-4 .on-text button:hover {
+  background-color: #000;
+}
+section.works {
+  padding: 90px 0px;
+}
+section.works .work-title h2 {
+  font-size: 25px;
+  color: #000;
+  line-height: 30px;
+  position: relative;
+}
+section.works .work-title h2::after {
+  content: "";
+  width: 80px;
+  height: 1px;
+  background-color: #fc6f52;
+  position: absolute;
+  bottom: -15px;
+  left: 47%;
+}
+section.works .work-title p {
+  margin-top: 20px;
+  padding: 0px 32.5%;
+  font-size: 15px;
+  line-height: 25px;
+  color: #555;
+  margin-bottom: 70px;
+}
+section.works .carousel .carousel-inner img {
+  width: 23%;
+  margin-bottom: 100px;
+}
+section.works .carousel {
+  margin: auto;
+  width: 70%;
+  min-height: 250px;
+}
+section.works .carousel button {
+  background-color: #0575e9;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+section.works .gallary-work {
+  background-image: url(../images/hero-bg/app.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-top: 120px;
+}
+section.works .gallary-work .overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+section.works .gallary-work .overlay .list-inline {
+  transform: translateX(50px);
+}
+section.works .gallary-work .overlay .list-inline li img {
+  width: 50%;
+}
+section.prices .price-title h2 {
+  font-size: 25px;
+  line-height: 30px;
+  color: #000;
+  margin-bottom: 35px;
+  position: relative;
+}
+section.prices .price-title h2::after {
+  content: "";
+  width: 85px;
+  height: 1px;
+  background-color: #fc6f52;
+  position: absolute;
+  bottom: -16px;
+  left: 47%;
+}
+section.prices .price-title p {
+  font-size: 15px;
+  line-height: 20px;
+  color: #797979;
+  font-weight: 450;
+  margin: 0 30% 105px;
+}
+section.prices .card {
+  width: 300px;
+  margin: auto;
+  border: 1px solid #eee;
+  border-radius: 0px;
+}
+section.prices .card .card-title {
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+  color: #000;
+}
+section.prices .card .card-price {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+section.prices .card .card-price span {
+  display: block;
+  font-size: 15px;
+  line-height: 20px;
+  color: #9d9c9c;
+  letter-spacing: 2px;
+}
+section.prices .card ul {
+  margin: 20px 0px;
+}
+section.prices .card ul li {
+  padding-bottom: 10px;
+  color: #555;
+  font-size: 15px;
+  line-height: 25px;
+}
+section.prices .card button {
+  background-color: #000;
+  color: #fff;
+  width: 140px;
+  height: 40px;
+  border-radius: 0;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+section.prices .card button:hover {
+  background-color: #0575e9;
+}
+section.subscribes {
+  padding: 120px 0px;
+}
+section.subscribes .sub {
+  background-color: #eee;
+  padding: 80px 30%;
+}
+
+section.subscribes .sub h2 {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+  color: #797979;
+}
+section.subscribes .sub button {
+  background-color: rgb(243, 189, 189);
+  margin-left: 3px;
+  padding: 6px 40px;
+  text-align: center;
+  border-radius: 0;
+  text-decoration: none;
+}
+section.subscribes .sub button:hover {
+  color: #eee;
+  background-color: rgb(78, 202, 29);
+  transition: all 0.7s ease-out;
+}
+section.subscribes .sub input {
+  border-radius: 0%;
+}
+section.subscribes .map {
+  margin-top: 0px;
+  border-top: 1px solid #9bc9f7;
+  margin-top: 5px;
+}
+section.contacts .col-12 {
+  width: 65%;
+  margin: auto;
+}
+
+section.contacts .col-12 form input,
+section.contacts .col-12 form textarea {
+  border: none;
+  border-bottom: 1px solid #eee9e9;
+  border-radius: 0;
+}
+section.contacts .col-12 form input {
+  margin-bottom: 20px;
+}
+section.contacts .col-12 form textarea {
+  margin-bottom: 10px;
+  padding-bottom: 80px;
+}
+section.contacts .col-12 form button {
+  width: 100%;
+  color: #fff;
+  background-color: rgb(134, 128, 128);
+  border: none;
+  border-radius: 0;
+  padding: 3px;
+  transition: all.8s ease-in;
+}
+
+section.contacts .col-md-12 form button:hover {
+  color: #000;
+  background-color: rgb(158, 42, 42);
+}
+.social-call {
+  background-color: #f7f7f7;
+  margin-top: 40px;
+  border-top: 1px solid #eee;
+  padding-top: 60px;
+  position: relative;
+}
+.social-call a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #0e0e0e;
+}
+.social-call a:hover {
+  color: rgb(91, 97, 23);
+  border-bottom: 1px solid #f45;
+  transition: all 1s ease;
+}
+.copyright {
+  margin-top: 50px;
+  font-size: 12px;
+  color: #282828;
+  padding-bottom: 60px;
+}
+.Top-arrow a {
+  padding: 5px 15px;
+  background-color: #555;
+  color: white;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+.Top-arrow:hover {
+  background-color: #0575e9;
+}
+
+/*تفاعليه الشاشات*/
+
+@media (max-width: 1199.98px) {
+  header .overlay .warrper .carousel-inner .carousel-item .carousel-caption {
+    transform: translateY(-300px);
+  }
+  header .overlay .warrper button {
+    transform: translateY(-250px);
+  }
+  section.services .container {
+    max-width: 1155px;
+  }
+  section.services .features .d-flex {
+    max-width: 300px;
+    max-height: 250px;
+    display: inline-block;
+  }
+  section.team .team-3 .image {
+    width: 95%;
+    margin-left: 106px;
+  }
+  section.team .overlay {
+    overflow: hidden;
+  }
+  section.team .container .col-md-4 {
+    height: 360px;
+    overflow: hidden;
+}
+  section.team .overlay:hover .img-text {
+    padding-top: 38px;
+  }
+  section.team .overlay .img-text h5 {
+    font-size: 18px;
+  }
+  section.team .overlay .img-text h4 {
+    font-size: 12px;
+  }
+  section.team .overlay .img-text p {
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 11px;
+    padding-bottom: 0px;
+  }
+
+  nav.navbar .navbar-brand {
+    color: #555;
+    font-size: 27px;
+    margin-left: 40px;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    margin-right: 40px;
+  }
+  section.services .sss .features {
+    transform: translateX(0px);
+  }
+  nav.navbar .navbar-nav li a.nav-link {
+    padding: 0 15px;
+  }
+  section.services .ser-2 .overlay .service-icon {
+    margin-bottom: 15px;
+  }
+  section.team .container .sec-cont {
+    margin-left: 20px;
+  }
+  section.team .team-3 .text-list,
+  section.team .team-3 ul .ro-list {
+    margin-left: 20px;
+  }
+  section.works .gallary-work .overlay .list-inline li img {
+    width: 125px;
+    margin-right: 30px;
+    margin-left: auto;
+    padding-bottom: 20px;
+  }
+  section.about .container .title p {
+    padding: 0 4%;
+  }
+  section.prices .card {
+    width: 14rem;
+  }
+
+  .progress-bar {
+    width: 330px;
+    height: 6px;
+    background-color: #eee;
+    margin-right: 10px;
+  }
+  .progress-bar-container h2 span.css {
+    padding-left: 277px;
+  }
+
+  .progress-bar-container h2 span.java {
+    padding-left: 234px;
+  }
+
+  .progress-bar-container h2 span.html {
+    padding-left: 264px;
+  }
+  .progress-bar-container h2 span.jquery {
+    padding-left: 263px;
+    display: inline-block;
+  }
+}
+@media (max-width: 991.98px) {
+  ul.navbar-nav .nav-item {
+    text-align: center;
+  }
+  ul.navbar-nav .nav-item:hover {
+    background-color: #fea;
+  }
+
+  section.services .phara h5::after {
+    left: 46%;
+  }
+  section.team .overlay .img-text p {
+    padding-bottom: 3px;
+    padding-top: 0px;
+    line-height: 16px;
+    font-size: 10px;
+    padding: 0px 5px;
+    margin-bottom: 5px;
+  }
+  section.team .overlay .img-text h5 {
+    padding-top: 59px;
+  }
+  section.team .overlay .img-text h4 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  .list-inline {
+    padding-right: 20px;
+  }
+  section.team .container .col-md-4 {
+    height: 285px;
+  }
+  /* Styling the border and box
+  effect of the progress bar*/
+  .progress-bar {
+    width: 430px;
+    height: 6px;
+    background-color: #eee;
+    margin-right: 10px;
+  }
+
+  .progress-bar-container h2 span.css {
+    padding-left: 355px;
+  }
+
+  .progress-bar-container h2 span.java {
+    padding-left: 310px;
+  }
+
+  .progress-bar-container h2 span.html {
+    padding-left: 340px;
+  }
+  .progress-bar-container h2 span.jquery {
+    padding-left: 340px;
+  }
+  header
+    .overlay
+    .warrper
+    .carousel-inner
+    .carousel-item
+    .carousel-caption
+    h2::after {
+    display: none;
+  }
+  section.team .overlay2 {
+    background-color: rgba(40, 42, 42, 0.92);
+    padding-left: 5.5%;
+    padding-right: 5.5%;
+    height: 430px;
+    display: flex;
+  }
+  section.services .ser-2 .overlay .service-icon {
+    left: 46%;
+  }
+  section.team .image img {
+    width: 80%;
+    padding-top: 57px;
+  }
+  section.team .team-4 .on-text p {
+    font-size: 15px;
+    padding-right: 0px;
+  }
+  section.works .work-title h2::after {
+    left: 46%;
+  }
+  section.prices .price-title p {
+    margin: 0px 5% 50px;
+  }
+  section.prices .price-title h2::after {
+    left: 44%;
+  }
+  /* Styling the border and box
+  effect of the progress bar*/
+  .progress-bar {
+    width: 420px;
+    height: 6px;
+    background-color: #eee;
+  }
+  section.prices .col-md {
+    width: 20%;
+    padding: 10px;
+  }
+  section.works .gallary-work .overlay .list-inline li img {
+    width: 95px;
+  }
+  section.subscribes .sub {
+    padding: 81px 2%;
+  }
+  section.contacts .col-12 {
+    width: 100%;
+  }
+}
+@media (max-width: 767.98px) {
+  header .overlay .warrper .carousel-inner .carousel-item .carousel-caption h2 {
+    font-size: 30px;
+    font-weight: 300;
+  }
+  header .overlay .warrper .carousel-inner .carousel-item .carousel-caption {
+    transform: translateY(-350px);
+  }
+  section.works .work-title h2::after {
+    left: 44%;
+}
+  header .overlay .warrper button {
+    transform: translateY(-350px);
+    margin-top: 20px;
+  }
+  section.services .phara p {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+  section.about .container .title p {
+    padding: 1px 0%;
+  }
+  section.team .team-text p {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  section.team .team-text h5::after {
+    left: 45%;
+  }
+  section.about .container .title h3::after {
+    left: 43%;
+  }
+  section.team .container .col-md-4 {
+    height: 630px;
+  }
+  section.team .overlay {
+    transform: translateY(-631px);
+    min-height: 671px;
+  }
+  section.team .overlay .img-text p {
+    padding-top: 0px;
+    line-height: 20px;
+    font-size: 14px;
+    padding: 0px 110px;
+    margin-bottom: 10px;
+  }
+  section.team .overlay .img-text h5 {
+    padding-top: 60px;
+    padding-bottom: 0px;
+  }
+  section.team .overlay .img-text h4 {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+  }
+  section.team .serv .text-banner {
+    width: 689px;
+    padding-top: 56px;
+    margin-right: 20px;
+  }
+  section.team .banner-img img {
+    width: 110%;
+  }
+  section.works .gallary-work .overlay .list-inline li img {
+    width: 76px;
+    padding-right: 0px;
+    margin-right: 34px;
+  }
+  section.prices .price-title h2::after {
+    width: 62px;
+  }
+  section.prices .col-md {
+    width: 100%;
+  }
+  section.prices .card {
+    width: 80%;
+  }
+  section.services .ser-2 .overlay .service-icon {
+    left: 45.5%;
+  }
+  section.services .sss .features {
+    transform: translateX(0px);
+  }
+}
+@media (max-width: 575.98px) {
+  header .overlay .warrper .carousel-inner .carousel-item .carousel-caption h2 {
+    font-size: 25px;
+    font-weight: 300;
+  }
+  header .overlay .warrper .carousel-inner .carousel-item .carousel-caption {
+    transform: translateY(-200px);
+  }
+  header .overlay .warrper button {
+    transform: translateY(-180px);
+  }
+
+  section.about .container .title h3::after {
+    left: 35%;
+  }
+  section.services .phara p {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  section.services .phara h5::after {
+    left: 43%;
+  }
+  section.about .container .title h3::after {
+    left: 41%;
+  }
+  section.team .container .col-md-4 {
+    display: none;
+  }
+  section.works .work-title h2::after {
+    left: 42%;
+  }
+  section.team .team-text h5::after {
+    display: none;
+  }
+  section.works .gallary-work .overlay .list-inline li img {
+    width: 90px;
+    margin-bottom: 48px;
+    margin-right: 32px;
+  }
+  section.works .gallary-work .overlay .list-inline {
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+  section.services .sss .features {
+    transform: translateX(0px);
+  }
+  section.services .ser-2 .overlay .service-icon {
+    left: 43.5%;
+  }
+  .progress-bar {
+    width: 230px;
+    height: 6px;
+    background-color: #eee;
+    margin-right: 10px;
+  }
+  .progress-bar-container h2 span.css {
+    padding-left: 171px;
+  }
+
+  .progress-bar-container h2 span.java {
+    padding-left: 127px;
+  }
+
+  .progress-bar-container h2 span.html {
+    padding-left: 157px;
+  }
+  .progress-bar-container h2 span.jquery {
+    padding-left: 158px;
+    display: inline-block;
+  }
+}
