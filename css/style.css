@@ -14,6 +14,19 @@ html {
   width: 100%;
   height: 100%;
 }
+.slide{
+  animation: slide 1s ease-in-out both;
+}
+@keyframes slide{
+ from{
+  transform: translateX(300px);
+  opacity: 0;
+ }
+ to {
+  transform: translateX(0px);
+  opacity: 1;
+ }
+}
 #preloader {
   background-color: #FFF;
   bottom: 0;
@@ -799,6 +812,7 @@ section.works .gallary-work {
   background-attachment: fixed;
   background-size: cover;
   margin-top: 120px;
+  overflow: hidden;
 }
 
 section.works .gallary-work .overlay {
@@ -1000,18 +1014,17 @@ section.contacts .col-md-12 form button:hover {
   color: #282828;
   padding-bottom: 60px;
 }
-
+.Top-arrow i{
+color: #0575e9;
+}
 .Top-arrow a {
-  padding: 5px 15px;
-  background-color: #555;
-  color: white;
+  padding: 5px 10px;
+  background-color: #9bc9f7 !important;
+  color: rgb(39, 114, 195) !important;
   position: absolute;
   right: 10px;
   bottom: 10px;
-}
-
-.Top-arrow:hover {
-  background-color: #0575e9;
+  border-radius: 50%;
 }
 
 /*تفاعليه الشاشات*/
