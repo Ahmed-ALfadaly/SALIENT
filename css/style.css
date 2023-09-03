@@ -9,8 +9,8 @@ body {
 
 html {
   overflow-x: hidden;
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   width: 100%;
   height: 100%;
 }
@@ -19,11 +19,12 @@ html {
 }
 @keyframes slide{
  from{
-  transform: translateX(300px);
+  transform: translateY(-300px);
   opacity: 0;
  }
+ 
  to {
-  transform: translateX(0px);
+  transform: translateY(0px);
   opacity: 1;
  }
 }
@@ -79,18 +80,18 @@ nav.navbar .navbar-nav li a.nav-link.active {
 }
 
 nav.navbar.noTransparent {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 1);
   border-bottom: 2px solid #eee;
 }
 
 nav.navbar.noTransparent ul.navbar-nav li a.nav-link {
-  color: #0575e9;
+  color: #f45;
 }
 
 nav.navbar.noTransparent ul.navbar-nav li a.nav-link:hover,
 nav.navbar.noTransparent ul.navbar-nav li a.nav-link.active {
   color: #fff;
-  background-color: #0575e9;
+  background-color: #f45;
 }
 
 header.header {
@@ -1014,13 +1015,16 @@ section.contacts .col-md-12 form button:hover {
   color: #282828;
   padding-bottom: 60px;
 }
+.Top-arrow{
+  color: #f43;
+}
 .Top-arrow i{
-color: #0575e9;
+color: red;
 }
 .Top-arrow a {
   padding: 5px 10px;
-  background-color: #9bc9f7 !important;
-  color: rgb(39, 114, 195) !important;
+  background-color: #f41 !important;
+  color: #fff !important;
   position: absolute;
   right: 10px;
   bottom: 10px;
