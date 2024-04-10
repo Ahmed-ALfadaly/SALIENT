@@ -5,6 +5,7 @@
 
 body {
   font-family: "Cairo", sans-serif;
+  overflow-x: hidden;
 }
 
 html {
@@ -61,6 +62,7 @@ nav.navbar .navbar-nav li a.nav-link {
   padding-left: 24px;
   padding-right: 24px;
   transition: all 0.5s ease;
+  background-color: transparent;
 }
 
 nav.navbar .navbar-brand {
